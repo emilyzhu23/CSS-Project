@@ -1,15 +1,21 @@
-/* 
+/*
 Name: Emily Zhu
 Class: Honors Comp Sci Period 7
-Date: 9.11.20
+Date: 9.17.20
 */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Raleway",Helvetica, Arial, sans-serif;
 
   background-image: url('backgroundimg.jpg'); /* create image for background */
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 
@@ -17,11 +23,18 @@ h1 {
   color: rgb(215, 247, 247);
   font-size: 60 px;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
   color: cornflowerblue;
   font-size: 150%
+}
+
+#Basics {
+  background-color: rgb(233, 240, 245);
+  border: 2px solid rgb(138, 231, 235);
+  text-align: center;
 }
 
 h3 {
@@ -30,21 +43,31 @@ h3 {
 }
 
 p {
-  color: rgb(2, 140, 186);
+  color: rgb(64, 139, 189);
+  background-color: rgb(233, 240, 245);
+  text-align: justify;
 }
 
 p.paragraphblue {
   color: steelblue; /* special color for certain paragraph elements */
 }
 
+#lightbluep {
+  color: rgb(52, 185, 247);
+}
 pre {
   color: slategray;
   font-family: Helvetica;
 }
 
 #imgnormal {
-  width: 576px;
-  height: 368px;
+  width: 50%;
+
+  border: 1px solid rgb(14, 116, 194);
+  outline-style: inset;
+  outline-color: rgb(140, 211, 222);
+  outline-width: 2px;
+  outline-offset: 5px;
 }
 
 a:link {
@@ -73,6 +96,7 @@ button.tutorial { /* buttons in the table needed special formatting */
   text-align: center;
   font-size: 12px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 button {
@@ -83,6 +107,7 @@ button {
   text-align: center;
   font-size: 14px;
   border-radius: 8px;
+  cursor: pointer;
   margin: auto; /* For centering */
   display: block; /* For centering */
 }
@@ -118,13 +143,13 @@ li a:hover {
 
 iframe {
   border: 2px solid rgb(173, 173, 173);
-  width: 500px;
-  height: 300px;
+  width: 50%;
+  height: 500px;
 }
 
 li.check { /* for checklist items */
   float: center;
-  color: rgb(85, 184, 237);
+  color: white;
 }
 
 table, th, td {
@@ -133,8 +158,10 @@ table, th, td {
 }
 
 table {
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
+  background-color: rgb(233, 238, 247);
 }
 
 th, td {
@@ -147,14 +174,12 @@ th {
 }
 
 caption {
+  background-color: rgb(233, 238, 247);
   color: rgb(52, 120, 112);
   font-size: 120%
 }
 
 /* for the image gallery at the end */
-* { 
-  box-sizing: border-box;
-}
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -233,4 +258,3 @@ caption {
 img {
   width: 100%;
 }
-
