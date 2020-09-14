@@ -24,11 +24,18 @@ h1 {
   font-size: 60 px;
   text-align: center;
   font-weight: bold;
+
+  border-style: dotted;
+  border-width: 3px;
+  border-color: rgb(173, 239, 247) rgb(173, 221, 247);
 }
 
 h2 {
   color: cornflowerblue;
-  font-size: 150%
+  font-size: 150%;
+  border-left: 7px solid rgb(173, 221, 247);
+  background-color: rgb(242, 249, 252);
+  padding-left: 5px;
 }
 
 #Basics {
@@ -46,10 +53,12 @@ p {
   color: rgb(64, 139, 189);
   background-color: rgb(233, 240, 245);
   text-align: justify;
+  margin-left: 10px;
 }
 
 p.paragraphblue {
   color: steelblue; /* special color for certain paragraph elements */
+  margin-left: 10px;
 }
 
 #lightbluep {
@@ -63,7 +72,10 @@ pre {
 #imgnormal {
   width: 50%;
 
+  margin: auto;
+
   border: 1px solid rgb(14, 116, 194);
+
   outline-style: inset;
   outline-color: rgb(140, 211, 222);
   outline-width: 2px;
